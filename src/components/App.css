@@ -9,6 +9,7 @@
 }
 
 .subCaption{
+
     font-size: 24px;
     line-height: 1.2;
     font-family: 'Montserrat';
@@ -46,6 +47,7 @@
 }
 
 .py-5 {
+
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
@@ -151,9 +153,11 @@ md\:mt-10 {
     padding-bottom: 0;
 }
 
+
 .loader{
     color: #fff;
 }
+
 .text-center {
     text-align: center;
 }
@@ -189,6 +193,7 @@ div, p {
     background-color: #6E63FF;
     border-color: #6E63FF;
 }
+
 
 .md\:w-auto {
     width: auto;
@@ -240,6 +245,7 @@ div, p {
 }
 
 .parent {
+
     background-color: #1B1E20;
     border: 1px #2f2f2f;
     border-radius: 15px;
