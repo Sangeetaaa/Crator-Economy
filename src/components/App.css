@@ -1,5 +1,32 @@
+@font-face {
+    font-family: "PoppinsBold";
+    src: local("PoppinsBold"),
+      url("../fonts/Poppins-Bold.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+ 
+
+  @font-face {
+    font-family: "PoppinsRegular";
+    src: local("PoppinsRegular"),
+      url("../fonts/Poppins-Regular.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: "PoppinsMedium";
+    src: local("PoppinsMedium"),
+      url("../fonts/Poppins-Medium.ttf") format("truetype");
+    font-weight: normal;
+  }
+
+  .ctaButton{
+      color : grey;
+      font-family: PoppinsRegular;
+  }
 .heroCaption {
-    font-family: 'Montserrat','Helvetica Neue','Helvetica','Arial','sans-serif';
+    font-family: PoppinsRegular;
     font-weight: 500;
     font-size: 75px;
     line-height: 75px;
@@ -9,10 +36,9 @@
 }
 
 .subCaption{
-
     font-size: 24px;
-    line-height: 1.2;
-    font-family: 'Montserrat';
+    line-height: 1.5;
+    font-family: PoppinsMedium;
     color: rgb(224, 221, 221);
     margin-bottom: 25px;
 }
@@ -31,9 +57,15 @@
 }
 
 .font-bold {
-    font-family: 'Poppins','sans-serif';
+    font-family:PoppinsRegular;
     color: #fff;
 }
+
+.font-bold1 {
+    font-family:PoppinsMedium;
+    color: #fff;
+}
+
 .md\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
@@ -41,13 +73,13 @@
 
 .text-center {
     text-align: center;
+    color: #fff;
 }
 .flex-wrap {
     flex-wrap: wrap;
 }
 
 .py-5 {
-
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
 }
@@ -71,7 +103,7 @@
     margin: auto;
     align-items: center;
     position: absolute;
-    top: 750px;
+    top: 690px;
 }
 
 .p-4{
@@ -102,7 +134,7 @@ padding: 1rem;
 
 .h-8 {
     height: 2rem;
-    padding-right: 5px;
+    padding-right: 8px;
 }
 .tracking-tight {
     letter-spacing: -.025em;
@@ -153,11 +185,9 @@ md\:mt-10 {
     padding-bottom: 0;
 }
 
-
 .loader{
     color: #fff;
 }
-
 .text-center {
     text-align: center;
 }
@@ -193,7 +223,6 @@ div, p {
     background-color: #6E63FF;
     border-color: #6E63FF;
 }
-
 
 .md\:w-auto {
     width: auto;
@@ -245,9 +274,8 @@ div, p {
 }
 
 .parent {
-
     background-color: #1B1E20;
-    border: 1px #2f2f2f;
+    border: 1px solid #303133;;
     border-radius: 15px;
   }
   .child {
@@ -259,3 +287,64 @@ div, p {
   .cardMargin{
       padding-top: 50px;
   }
+  
+  .card1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    left: 150px;
+    word-wrap: break-word;
+    background-color: #1B1E20;
+ border: 1px #2f2f2f;
+    background-clip: border-box;
+    border-radius: 0.25rem;
+    top: 100px;
+}
+
+.list-group-item1 {
+    position: relative;
+    display: block;
+    height: initial;
+    padding: 0.75rem 1.25rem;
+    background-color: #1B1E20;
+    border: 1px solid #303133;
+}
+
+.card-header1
+{
+    padding: 1.5rem 1.5rem;
+    align-items: left;
+    margin-bottom: 0;
+ background-color: #1B1E20;
+ border: 1px solid #303133;
+ border-radius:15px 15px 0px 0px;
+}
+
+.hr-lines:after{
+    content:" ";
+    height: 2px;
+    width: 810px;
+    background: #303133;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+  }
+
+  .hr-lines{
+    position: relative;
+    /*  new lines  */
+    max-width: 890px;
+    margin: 100px auto;
+    text-align: left;
+  }
+
+  .subHeading{
+    font-size: 32px;
+    line-height: 1.5;
+    font-family: PoppinsMedium;
+    color: rgb(224, 221, 221);
+    margin-bottom: 25px;
+}
+

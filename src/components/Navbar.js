@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Identicon from "identicon.js";
 import "./App.css";
 import photo from "../LOGO.svg";
+import photo2 from "./avatar.png";
 
 class Navbar extends Component {
   render() {
@@ -11,12 +12,12 @@ class Navbar extends Component {
           <a aria-current="page" class="" href="/">
             <h3 className="flex items-center text-black no-underline">
               <img className="h-8" src={photo} alt="Mascot" />
-              <span class="text-2xl font-bold tracking-tight">Crator Economy</span>
+              <span class="text-2xl font-bold1 tracking-tight">Crator Economy</span>
             </h3>
           </a>
           <ul className="navbar-nav px-3">
             <li className="nav-item text-nowrap d-none d-sm-none d-sm-block">
-              <small className="text-secondary">
+              <small className="font-bold tracking-tight">
                 <small id="account">{this.props.account}</small>
               </small>
               {this.props.account ? (
@@ -24,10 +25,7 @@ class Navbar extends Component {
                   className="ml-2"
                   width="30"
                   height="30"
-                  src={`data:image/png;base64,${new Identicon(
-                    this.props.account,
-                    30
-                  ).toString()}`}
+                  src={photo2}
                 />
               ) : (
                 <span></span>
