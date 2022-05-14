@@ -16,20 +16,20 @@ class Main extends Component {
             <section className="md:mt-10" />
             <div className=" text-center flex-wrap py-9 md:py-0 ">
               <h1 className="md:leading-relaxed text-3xl md:text-5xl font-bold py-10 md:py-3 ">
-                Get your hardwork,
+                Get your hardwork,&nbsp;
                 <span className="to-blue-500">
                   valued.
                 </span>
               </h1>
               <div className="text-center flex flex-wrap py-5 md:py-0">
-                <h1 className="subCaption">
+                <p className="subCaption">
                   Decentralized image sharing platform, where creators can showcase their work and viewers can provide tip in cryptocurrency.
-                </h1>
+                </p>
               </div>
               <br></br>
               <div className="parent">
                 <div className="child">
-                <img src={logo} alt="illustration" />;
+                <img src={logo} alt="illustration" />
                 </div>
                 <div className="child">
                   <form
@@ -40,12 +40,12 @@ class Main extends Component {
                       this.props.uploadImage(description);
                     }}
                   >
-                    <input
+                    <input className="ctaButton"
                       type="file"
                       accept=".jpg, .jpeg, .png, .bmp, .gif"
                       onChange={this.props.captureFile}
                     />
-                    <div className="form-group ">
+                    <div className="form-group ctaButton">
                       <br></br>
                       <input
                         id="imageDescription"
@@ -58,7 +58,7 @@ class Main extends Component {
                         required
                       />
                     </div>
-                    <button className="to-blue-500"
+                    <button className="to-blue-500 ctaButton"
                       type="submit"
                       class="btn  btn-primaryc  btn-block btn-lg"
                     >
@@ -69,11 +69,12 @@ class Main extends Component {
               </div>
               <br></br>
               <br></br>
+              <p className="hr-lines subHeading">Feed</p>
               <br></br>
               {this.props.images.map((image, key) => {
                 return (
-                  <div className="card mb-4" key={key}>
-                    <div className="card-header">
+                  <div className="card1 mb-4" key={key}>
+                    <div className="card-header1">
                       <img
                         className="mr-2"
                         width="40"
@@ -83,10 +84,10 @@ class Main extends Component {
                           30
                         ).toString()}`}
                       />
-                      <small className="text-muted">{image.author}</small>
+                      <small >{image.author}</small>
                     </div>
                     <ul id="imageList" className="list-group list-group-flush">
-                      <li className="list-group-item">
+                      <li className="list-group-item1">
                         <p class="text-center">
                           <img
                             src={`https://ipfs.infura.io/ipfs/${image.hash}`}
@@ -95,8 +96,8 @@ class Main extends Component {
                         </p>
                         <p>{image.description}</p>
                       </li>
-                      <li key={key} className="list-group-item py-2">
-                        <small className="float-left mt-1 text-muted">
+                      <li key={key} className="list-group-item1 py-2">
+                        <small className="float-left mt-1 ">
                           TIPS:{" "}
                           {window.web3.utils.fromWei(
                             image.tipAmount.toString(),
