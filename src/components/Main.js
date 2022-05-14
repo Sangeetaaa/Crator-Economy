@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Identicon from "identicon.js";
-import { ReactComponent as ReactLogo } from "./upload.svg";
+import logo from "./illustration.png";
 import "./App.css";
 
 class Main extends Component {
@@ -17,21 +17,19 @@ class Main extends Component {
             <div className=" text-center flex-wrap py-9 md:py-0 ">
               <h1 className="md:leading-relaxed text-3xl md:text-5xl font-bold py-10 md:py-3 ">
                 Get your hardwork,
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-blue-500">
+                <span className="to-blue-500">
                   valued.
                 </span>
               </h1>
               <div className="text-center flex flex-wrap py-5 md:py-0">
                 <h1 className="subCaption">
-                  Decentralized photo/image sharing platform. Secured by
-                  blockchain, where viewers can provide contributions/tip to
-                  authors in cryptocurrency.
+                  Decentralized image sharing platform, where creators can showcase their work and viewers can provide tip in cryptocurrency.
                 </h1>
               </div>
               <br></br>
               <div className="parent">
                 <div className="child">
-                  <ReactLogo/>
+                <img src={logo} alt="illustration" />;
                 </div>
                 <div className="child">
                   <form
@@ -47,7 +45,7 @@ class Main extends Component {
                       accept=".jpg, .jpeg, .png, .bmp, .gif"
                       onChange={this.props.captureFile}
                     />
-                    <div className="form-group mr-sm-2">
+                    <div className="form-group ">
                       <br></br>
                       <input
                         id="imageDescription"
@@ -60,9 +58,9 @@ class Main extends Component {
                         required
                       />
                     </div>
-                    <button
+                    <button className="to-blue-500"
                       type="submit"
-                      class="btn btn-primary btn-block btn-lg"
+                      class="btn  btn-primaryc  btn-block btn-lg"
                     >
                       Share
                     </button>

@@ -117,7 +117,7 @@ class App extends Component {
       <div>
         <Navbar account={this.state.account} />
         { this.state.loading
-          ? <div id="loader" className="text-center mt-5"><p>Loading...</p></div>
+          ? <div id="loader" className="text-center loader"><p>Loading...</p></div>
           : <Main
               images={this.state.images}
               captureFile={this.captureFile}

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Identicon from "identicon.js";
 import "./App.css";
-import photo from "../logo192.png";
+import photo from "../LOGO.svg";
 
 class Navbar extends Component {
   render() {
@@ -11,7 +11,7 @@ class Navbar extends Component {
           <a aria-current="page" class="" href="/">
             <h3 className="flex items-center text-black no-underline">
               <img className="h-8" src={photo} alt="Mascot" />
-              <span class="text-2xl font-bold tracking-tight">Instagram</span>
+              <span class="text-2xl font-bold tracking-tight">Crator Economy</span>
             </h3>
           </a>
           <ul className="navbar-nav px-3">
